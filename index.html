@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#6f1835">
+  <title>Nuestro primer año ❤️</title>
+  <style>
+    :root{--vino:#6f1835;--oro:#d8ad5d;--rosa:#f1d6df;--marfil:#fffaf1;--tinta:#39242d}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--marfil);color:var(--tinta);font-family:Georgia,serif;overflow-x:hidden}
+    .hero{min-height:100vh;display:grid;place-items:center;text-align:center;padding:45px 20px;color:#fff;background:linear-gradient(#290a1aaa,#290a1aaa),url('img/12.jpeg') center/cover;position:relative}.hero::before{content:"";position:absolute;inset:22px;border:1px solid #f1d38caa;border-radius:34px}.hero-inner{position:relative;z-index:1;max-width:880px}.date{letter-spacing:.32em;text-transform:uppercase;font:bold 12px Arial;color:#f4d894}.year{font:900 clamp(110px,25vw,270px)/.72 Arial;color:#fff;text-shadow:0 20px 70px #0008;margin:45px 0 24px}.year span{display:block;font:700 clamp(30px,6vw,58px)/1.1 Georgia}.hero p{font-size:clamp(18px,2.5vw,24px);line-height:1.7;max-width:700px;margin:0 auto 30px}
+    button,.link{display:inline-block;border:0;border-radius:999px;padding:15px 25px;background:var(--oro);color:#3b1a22;font:800 16px Arial;cursor:pointer;text-decoration:none;box-shadow:0 14px 38px #0005;transition:.25s}.link{margin-left:8px;background:#ffffff1f;border:1px solid #fff6;color:white}button:hover,.link:hover{transform:translateY(-3px)}
+    main{position:relative}.intro{padding:95px 20px 60px;text-align:center;max-width:840px;margin:auto}.intro .twelve{color:var(--vino);font:900 clamp(55px,10vw,110px)/1 Arial}.intro h2{font-size:clamp(32px,6vw,55px);margin:10px 0 15px}.intro p{font:18px/1.75 system-ui;color:#70535e}
+    .timeline{max-width:1100px;margin:auto;padding:10px 5vw 105px;position:relative}.timeline::before{content:"";position:absolute;left:50%;top:0;bottom:70px;width:2px;background:linear-gradient(var(--oro),var(--vino))}.memory{width:50%;padding:0 55px 70px 0;position:relative}.memory:nth-child(even){margin-left:50%;padding:0 0 70px 55px}.memory::after{content:attr(data-month);position:absolute;right:-24px;top:20px;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--vino);border:4px solid var(--marfil);color:white;font:bold 15px Arial;box-shadow:0 5px 18px #43112644}.memory:nth-child(even)::after{left:-24px;right:auto}.frame{background:#fff;padding:12px 12px 48px;border-radius:8px;box-shadow:0 16px 45px #4a1d2b28;transform:rotate(-1deg)}.memory:nth-child(even) .frame{transform:rotate(1deg)}.frame img{width:100%;height:340px;object-fit:cover;border-radius:4px;display:block}.frame p{text-align:center;margin:16px 5px -33px;font-size:16px;color:#6c4b56}
+    .promise{background:var(--vino);color:white;text-align:center;padding:90px 20px;position:relative;overflow:hidden}.promise::before{content:"♥";position:absolute;font:900 420px/1 Georgia;color:#ffffff08;left:50%;top:50%;transform:translate(-50%,-50%)}.promise div{position:relative;max-width:760px;margin:auto}.promise h2{font-size:clamp(36px,7vw,65px);margin:0 0 18px}.promise p{font-size:19px;line-height:1.75;margin:0 auto 28px;color:#f8e8ee}
+    dialog{border:0;border-radius:24px;padding:0;max-width:min(760px,93vw);max-height:90vh;background:#fffaf1;color:var(--tinta);box-shadow:0 38px 140px #260813c7}dialog::backdrop{background:#260813dd;backdrop-filter:blur(7px)}.letter{padding:clamp(30px,7vw,68px);border:2px solid #d8ad5d;margin:12px;background:linear-gradient(135deg,#fffaf1,#f8e8ee)}.letter h2{text-align:center;color:var(--vino);font-size:clamp(32px,6vw,52px);line-height:1.1;margin:0 0 28px}.letter p{font-size:17px;line-height:1.88;text-align:justify}.close{float:right;position:sticky;top:10px;width:42px;height:42px;padding:0;background:var(--vino);color:white;border-radius:50%;box-shadow:none}.signature{text-align:right!important;color:var(--vino);font-style:italic;font-weight:700}.final-heart{text-align:center;color:var(--vino);font-size:52px;animation:beat 1.3s infinite}@keyframes beat{50%{transform:scale(1.12)}}
+    .confetti{position:fixed;top:-25px;color:#f3cad7;z-index:5;pointer-events:none;animation:fall linear forwards}@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:.1}}
+    @media(max-width:720px){.hero-actions{display:grid;gap:12px;justify-content:center}.link{margin:0}.timeline::before{left:25px}.memory,.memory:nth-child(even){width:100%;margin:0;padding:0 0 55px 60px}.memory::after,.memory:nth-child(even)::after{left:1px;right:auto}.frame img{height:370px}.letter p{text-align:left}}
+    @media(max-width:450px){.frame img{height:300px}.timeline{padding-left:14px;padding-right:14px}.memory,.memory:nth-child(even){padding-left:52px}.year{font-size:115px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.final-heart{animation:none}.confetti{display:none}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="date">El primer capítulo de muchos</div>
+      <div class="year">1<span>año juntos</span></div>
+      <p>Doce meses, cientos de recuerdos y una historia que quiero seguir escribiendo a su lado.</p>
+      <div class="hero-actions"><button type="button" onclick="abrirCarta()">Abrir mi carta de aniversario 💌</button><a class="link" href="#recuerdos">Recorrer nuestro año</a></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro" id="recuerdos"><div class="twelve">12</div><h2>meses de nosotros</h2><p>No caben todos nuestros momentos en una sola página, pero estas doce fotografías cuentan algo esencial: seguimos aquí, seguimos creciendo y seguimos eligiéndonos.</p></section>
+    <section class="timeline" aria-label="Doce recuerdos de nuestro primer año">
+        <article class="memory" data-month="01"><div class="frame"><img src="img/1.jpeg" alt="Juntos durante una celebración especial" loading="lazy"><p>El comienzo de algo hermoso</p></div></article>
+        <article class="memory" data-month="02"><div class="frame"><img src="img/2.jpeg" alt="Una selfie feliz bajo las luces de la noche" loading="lazy"><p>Aprendiendo a caminar juntos</p></div></article>
+        <article class="memory" data-month="03"><div class="frame"><img src="img/3.jpeg" alt="Abrazados durante una noche inolvidable" loading="lazy"><p>Las primeras aventuras</p></div></article>
+        <article class="memory" data-month="04"><div class="frame"><img src="img/4.jpeg" alt="Sonriendo juntos durante una celebración" loading="lazy"><p>Risas que ya son parte de nosotros</p></div></article>
+        <article class="memory" data-month="05"><div class="frame"><img src="img/5.jpeg" alt="Un retrato juntos bajo el cielo nocturno" loading="lazy"><p>Los días sencillos también cuentan</p></div></article>
+        <article class="memory" data-month="06"><div class="frame"><img src="img/6.jpeg" alt="Un abrazo lleno de amor" loading="lazy"><p>Medio año eligiéndonos</p></div></article>
+        <article class="memory" data-month="07"><div class="frame"><img src="img/7.jpeg" alt="Abrazados durante una salida a la naturaleza" loading="lazy"><p>Más historias por vivir</p></div></article>
+        <article class="memory" data-month="08"><div class="frame"><img src="img/8.jpeg" alt="Compartiendo un beso en una aventura al aire libre" loading="lazy"><p>Mi compañera de aventuras</p></div></article>
+        <article class="memory" data-month="09"><div class="frame"><img src="img/9.jpeg" alt="Disfrutando juntos una atracción del parque" loading="lazy"><p>Nuestro amor, nuestro refugio</p></div></article>
+        <article class="memory" data-month="10"><div class="frame"><img src="img/10.jpeg" alt="Una selfie feliz dentro del automóvil" loading="lazy"><p>Diez meses y muchas razones</p></div></article>
+        <article class="memory" data-month="11"><div class="frame"><img src="img/11.jpeg" alt="Sonriendo juntos junto al agua" loading="lazy"><p>A un paso de este gran día</p></div></article>
+        <article class="memory" data-month="12"><div class="frame"><img src="img/12.jpeg" alt="Un beso cariñoso dentro del automóvil" loading="lazy"><p>Nuestro primer año ❤️</p></div></article>
+    </section>
+    <section class="promise"><div><h2>Esto apenas comienza</h2><p>Un año no es el final de una cuenta; es la primera vuelta completa de una historia que todavía tiene muchísimo por delante.</p><button type="button" onclick="abrirCarta()">Leer la carta del primer año</button></div></section>
+  </main>
+
+  <dialog id="carta" aria-labelledby="titulo">
+    <article class="letter">
+      <button class="close" type="button" onclick="carta.close()" aria-label="Cerrar">✕</button>
+      <h2 id="titulo">Feliz primer año, mi amor</h2>
+      <p>Hoy cumplimos nuestro primer año juntos. Doce meses que parecen haber pasado en un instante y, al mismo tiempo, contienen tantos recuerdos que podría quedarme horas pensando en cada uno.</p>
+      <p>Gracias por llegar a mi vida y por permitirme compartir la suya. Gracias por cada sonrisa, cada conversación, cada aventura y también por cada dificultad que decidimos enfrentar juntos. Todo eso nos ha enseñado a querernos con más paciencia, más sinceridad y más intención.</p>
+      <p>Me siento orgulloso de lo que hemos construido. No porque haya sido perfecto, sino porque ha sido real: con días maravillosos, momentos difíciles, distancia, aprendizajes y dos personas que siguen escogiendo cuidar este amor.</p>
+      <p>Usted se ha convertido en mi compañera, mi consentida, mi reina y una parte muy importante de mis planes. Quiero seguir creando recuerdos a su lado, apoyarla en sus sueños y celebrar muchos aniversarios más.</p>
+      <p>La quiero con todo mi corazón. Gracias por este primer año inolvidable y por ser la persona con quien deseo comenzar el siguiente capítulo. Feliz aniversario, mi vida. ❤️</p>
+      <p class="signature">Siempre suyo.</p>
+      <div class="final-heart">♥</div>
+    </article>
+  </dialog>
+  <script>
+    const carta=document.getElementById('carta');
+    function abrirCarta(){carta.showModal();crearConfeti()}
+    function crearConfeti(){
+      for(let i=0;i<34;i++){
+        const h=document.createElement('span');h.className='confetti';h.textContent=i%3?'♥':'✦';h.style.left=Math.random()*100+'vw';h.style.fontSize=12+Math.random()*18+'px';h.style.animationDuration=3+Math.random()*4+'s';h.style.animationDelay=Math.random()*.8+'s';document.body.appendChild(h);setTimeout(()=>h.remove(),8000)
+      }
+    }
+    carta.addEventListener('click',e=>{if(e.target===carta)carta.close()});
+  </script>
+</body>
+</html>
